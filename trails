@@ -1,0 +1,38 @@
+// The following are exercises from Roy.
+
+
+// write a function that converts miles to Kilometers
+// I want to be able to enter any number of miles and have it 
+// convert to km.
+var oneKm = 1.609344;
+
+function convert(x) {
+	return x * oneKm;
+}
+
+convert(6.2);
+// Spent 1/2 hour on this, then got help from Drew. I was trying to use oneKm as one of my
+// parameters.
+
+// Making a constructor of trail info.
+function Trail (name, distance, difficulty, description) {
+	this.name = name;
+	this.distance = distance;
+	this.difficulty = difficulty;
+	this.description = description;
+}
+
+sht = new Trail("Superior Hiking Trail",     206, 3, "Beautiful. Lots of waterfalls.");
+
+at  = new Trail("Appalation Trail",         2168, 6, "Beautiful. Lots of hills.");
+
+pct = new Trail("Pacific Crest Trail",      2650, 7, "Volcanos and Northern Washington");
+
+cdt = new Trail("Continental Divide Trail", 2700, 8, "The phd of backpacking");
+
+// make an empty array and push all trails into it. 
+var array = [];
+array.push(sht, at, pct, cdt);
+// Need to make a function that will average the distance and difficulty of all the trails.
+
+}
